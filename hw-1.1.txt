@@ -1,6 +1,8 @@
 ### Ensure Commit Message Prefix
 
-To ensure the commit message starts with the prefix DJ-X: ... DJ-XXXX:, place the following code in `.git/hooks/commit-ms` and make it executable:  
+To ensure the commit message starts with the prefix DJ-X: ... DJ-XXXX:, place the file `commit-ms`  in `.git/hooks/commit-ms` and make it executable.
+
+`Commit-ms` file contents:
 
 ```sh
 
