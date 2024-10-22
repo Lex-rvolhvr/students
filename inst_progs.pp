@@ -1,4 +1,7 @@
-class inst_progs {
+# Class: openvpn::inst_progs
+# Описание: этот класс выполняет важную задачу.
+
+class openvpn::inst_progs {
   # puppet agent
   package { 'Puppet Agent (64-bit)':
     ensure          => '7.28.0',
