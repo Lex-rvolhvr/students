@@ -16,7 +16,7 @@ VPS_ID=""
 - sg_BACK
 - WEB_EC2
 - DB_EC2
- - 
+ -
 ```
 <br>
 
@@ -86,10 +86,10 @@ for group in response_groups['Groups']:
         print(f"  No policies attached to group {group_name}")
 ```
 </details>
-<br>   
+<br>
 
 #### Access to the console for the admin user via the sso login using two-factor authentication:
-```bash 
+```bash
 aws sso login
 ```
 <details>
@@ -106,10 +106,10 @@ CNSB-HCFS
 Successfully logged into Start URL: https://d-c3670d5ba2.awsapps.com/start/#
 ```
 </details>
-<br>   
+<br>
 
 #### Create VPS:
-```bash 
+```bash
 aws ec2 create-vpc --cidr-block $VPC_CIDR
 ```
 <details>
@@ -138,7 +138,7 @@ aws ec2 create-vpc --cidr-block $VPC_CIDR
 }
 ```
 </details>
-<br>   
+<br>
 
 
 #### Create subnet - public:
@@ -181,7 +181,7 @@ aws ec2 create-subnet --vpc-id $VPC_ID --cidr-block $PUB_SUBNET_CIDR  --tag-spec
 }
 ```
 </details>
-<br>   
+<br>
 
 #### Create subnet - private:
 ```bash
@@ -222,27 +222,3 @@ aws ec2 create-subnet --vpc-id $VPC_ID --cidr-block $PRI_SUBNET_CIDR  --tag-spec
 }
 ```
 <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
